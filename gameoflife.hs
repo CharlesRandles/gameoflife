@@ -23,7 +23,7 @@ makeEmpty w h = Field
                 $ take h
                 $ repeat
                 $ take w
-                $ repeat '.'
+                $ repeat deadCell
 
 replaceNth :: [a] -> a -> Int -> [a]
 replaceNth [] _ _ = []
